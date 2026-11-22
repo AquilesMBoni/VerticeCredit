@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+data/vertice*.db*
+data/processed/
+models/**/*.joblib
+reports/**/*.json
+.git/

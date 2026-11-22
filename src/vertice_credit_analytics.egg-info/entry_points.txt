@@ -1,0 +1,2 @@
+[console_scripts]
+vertice-pipeline = vertice.pipeline.runner:main

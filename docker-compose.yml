@@ -1,0 +1,16 @@
+services:
+  api:
+    build: .
+    command: uvicorn vertice.api.main:app --app-dir src --host 0.0.0.0 --port 8000
+    ports: ["8000:8000"]
+    volumes: ["vertice-data:/app/data", "vertice-models:/app/models"]
+  dashboard:
+    build: .
+    environment:
+      VERTICE_API_URL: http://api:8000
+    ports: ["8501:8501"]
+    volumes: ["vertice-data:/app/data", "vertice-models:/app/models"]
+    depends_on: [api]
+volumes:
+  vertice-data:
+  vertice-models:
