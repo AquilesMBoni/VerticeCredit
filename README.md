@@ -2,8 +2,6 @@
 
 Pipeline completa de análise de risco de crédito em Python, aplicada a **duas bases**: uma americana (Kaggle) e uma brasileira, construída com as regras de crédito do Brasil em 2026. O projeto vai do arquivo bruto até a decisão de aprovar ou recusar: contrato de qualidade, limpeza auditável, engenharia de atributos, modelo de Probabilidade de Default (PD), simulação de política de crédito, API REST e dashboard interativo.
 
-![Visão geral no tema claro](docs/screenshots/visao-geral-claro.png)
-
 | Camada | Ferramentas |
 |---|---|
 | Dados e persistência | pandas, NumPy, SQLite (SQLAlchemy 2, um banco por base), Parquet (PyArrow) |
